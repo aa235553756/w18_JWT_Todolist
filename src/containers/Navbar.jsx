@@ -16,7 +16,7 @@ export function Navbar() {
         // console.log(res);
         setTimeout(() => {
           setToken(null); //將App刷新,token設為無(同時local也設無),使下一位無法繼續使用同組token
-          localStorage.setItem('token', null); //local記得一起設定為無,下一次重整才不會有token
+          localStorage.removeItem('token'); //local記得一起設定為無,下一次重整才不會有token
           alertify.closeAll()
         }, 1000)
         alertify.alert('登出成功', '自動為您跳轉畫面。', () => {
