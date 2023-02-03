@@ -16,6 +16,8 @@ export function TodoPage() {
         // console.log(res);
       })
       .catch((err) => {
+        setToken(null); //將過期token重置為null
+        localStorage.removeItem('token'); //同時也刪除local內的舊token
         navigate('/login', { replace: true })
         console.log(err);
       })
