@@ -35,7 +35,9 @@ export function LoginPage() {
       .catch((err) => {
         console.error(err);
         if (err.response.status === 401) {
-          alertify.alert('登入失敗', '帳號或密碼輸入錯誤')
+          alertify.alert('登入失敗', '帳號或密碼輸入錯誤', () => {
+            return;
+          })
         }
       })
   }

@@ -35,7 +35,9 @@ export function SignUpPage() {
         console.log(err);
         if (err.response.status = 422) {
           console.log(err.response.data.error.toString());
-          alertify.alert('註冊失敗', err.response.data.error.toString());
+          alertify.alert('註冊失敗', err.response.data.error.toString(), () => {
+            return;
+          });
         }
       });
   }
