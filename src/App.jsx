@@ -9,7 +9,7 @@ import alertify from 'alertifyjs';
 import 'alertifyjs/build/css/alertify.css';
 import 'semantic-ui-css/semantic.min.css'
 
-alertify.defaults.transition = "slide";
+alertify.defaults.transition = "zoom";
 alertify.defaults.theme.ok = "ui positive button";
 alertify.defaults.theme.cancel = "ui black button";
 
