@@ -2,7 +2,7 @@
 import { defineConfig } from "file:///Users/Zheng/Desktop/React_JWT_todo/node_modules/vite/dist/node/index.js";
 import react from "file:///Users/Zheng/Desktop/React_JWT_todo/node_modules/@vitejs/plugin-react/dist/index.mjs";
 var vite_config_default = defineConfig({
-  base: "/w18_JWTtodolist_Router_Reducer/",
+  base: "/w18_JWT_Todolist/",
   plugins: [react()]
 });
 export {
