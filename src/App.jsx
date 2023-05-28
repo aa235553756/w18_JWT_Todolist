@@ -18,7 +18,7 @@ function App() {
   api.defaults.headers.common['Authorization'] = token; //每當登入setToken後,App刷新,使接下來api都附帶token
 
   return (
-    <BrowserRouter basename='/w18_JWTtodolist_Router_Reducer'>
+    <BrowserRouter basename='/w18_JWT_Todolist'>
       <AuthContext.Provider value={{ token, setToken }}>
         <Routes>
           <Route element={<NavLinkGroup />}>
